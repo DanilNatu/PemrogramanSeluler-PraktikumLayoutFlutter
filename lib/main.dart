@@ -190,17 +190,17 @@ class _LoginPageState extends State<LoginPage> {
                     fontSize: 16,
                   ),
                   decoration: InputDecoration(
-                    hintText: _switchValue ? 'Email' : 'E-mail',
-                    hintStyle: TextStyle(
+                    labelText: _switchValue ? 'Email' : 'E-mail',
+                    labelStyle: TextStyle(
                       height: 1.7,
-                      color: Colors.grey[400],
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       fontSize: 16,
                     ),
                     prefixIcon: const Icon(
                       Icons.email, 
                       color: Color.fromARGB(255, 231, 175, 80)),
                     filled: true,
-                    fillColor: Colors.grey[900],
+                    fillColor: Color.fromARGB(255, 52, 53, 54),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
                       borderSide: BorderSide(),
@@ -220,10 +220,10 @@ class _LoginPageState extends State<LoginPage> {
                     fontSize: 16,
                   ),
                   decoration: InputDecoration(
-                    hintText:'Password',
-                    hintStyle: TextStyle(
+                    labelText:'Password',
+                    labelStyle: TextStyle(
                       height: 1.7,
-                      color: Colors.grey[400],
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       fontSize: 16,
                     ),
                     prefixIcon: const Icon(
@@ -232,7 +232,7 @@ class _LoginPageState extends State<LoginPage> {
                     suffixIcon: IconButton(
                       icon: Icon(
                         _obscureText ? Icons.visibility : Icons.visibility_off,
-                        color: Colors.grey,
+                        color: Colors.white,
                       ),
                       onPressed: () {
                         setState(() {
@@ -241,7 +241,7 @@ class _LoginPageState extends State<LoginPage> {
                       },
                     ),
                     filled: true,
-                    fillColor: Colors.grey[900],
+                    fillColor: Color.fromARGB(255, 52, 53, 54),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
                       borderSide: BorderSide(),
