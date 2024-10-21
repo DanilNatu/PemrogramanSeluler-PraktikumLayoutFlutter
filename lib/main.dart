@@ -182,32 +182,41 @@ class _LoginPageState extends State<LoginPage> {
               ),
               
               // Email Field dengan ukuran kustom
-              Container(
-                width: 550,
-                child: TextField(
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                  decoration: InputDecoration(
-                    labelText: _switchValue ? 'Email' : 'E-mail',
-                    labelStyle: TextStyle(
-                      height: 1.7,
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      fontSize: 16,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(
+                    fit: FlexFit.loose,
+                    child: Container(
+                      width: 550,
+                      child: TextField(
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                        decoration: InputDecoration(
+                          labelText: _switchValue ? 'Email' : 'E-mail',
+                          labelStyle: TextStyle(
+                            height: 1.7,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 16,
+                          ),
+                          prefixIcon: const Icon(
+                            Icons.email, 
+                            color: Color.fromARGB(255, 231, 175, 80)),
+                          filled: true,
+                          fillColor: Color.fromARGB(255, 52, 53, 54),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(5),
+                            borderSide: BorderSide(),
+                          ),
+                        ),
+                      ),
                     ),
-                    prefixIcon: const Icon(
-                      Icons.email, 
-                      color: Color.fromARGB(255, 231, 175, 80)),
-                    filled: true,
-                    fillColor: Color.fromARGB(255, 52, 53, 54),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5),
-                      borderSide: BorderSide(),
-                    ),
                   ),
-                ),
+                ],
               ),
+
               const SizedBox(height: 7),
               
               // Password Field
